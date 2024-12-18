@@ -1,7 +1,6 @@
 const apiKey = "9088a4fe3baa32b8b41f1c1f8d59218f";
 const searchInput = document.querySelector(".searchInput");
 const searchBtn = document.querySelector(".searchBtn");
-// const toggleIcon = document.querySelector('.toggleMode i');
 const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const months = [
   "Jan",
@@ -46,7 +45,7 @@ const setWeather = (data) => {
   regionName.innerHTML = `${data.name}, ${data.sys.country}`;
 
   forecastIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png">`;
-  console.log(data.weather[0].icon)
+  console.log(data.weather[0].icon);
 
   forecastInfo.innerHTML = data.weather[0].main;
   currTemp.innerHTML = `${(data.main.temp - 273.15).toFixed(1)}&degC`;
@@ -68,5 +67,5 @@ searchBtn.addEventListener("click", () => {
   getWeather(searchInput.value);
 });
 
-getWeather('New Delhi')
-
+// Initial Weather Fetch
+getWeather("New Delhi");

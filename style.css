@@ -54,6 +54,7 @@ header .input-container {
   width: 100%;
   min-width: 300px;
 }
+
 header .input-container input {
   width: 100%;
 }
@@ -62,12 +63,12 @@ header .input-container input,
 header .input-container button {
   color: #fff;
 }
+
 header .input-container button {
   cursor: pointer;
 }
 
 header .getLocation,
-header .toggleMode,
 header .sourceCode {
   display: flex;
   border-radius: 5px;
@@ -79,36 +80,15 @@ header .sourceCode {
   transition: 0.17s ease;
 }
 
-header .toggleMode {
-  padding: 0 2rem;
-}
-header .toggleMode i {
-  padding: 1rem 2rem;
-}
-
 header .sourceCode {
   background: rgba(255, 255, 255, 100%);
   padding: 0.95rem 2rem;
 }
+
 header a {
-  /* padding: 1rem 4rem; */
   text-decoration: none;
   color: #0a0a0a;
 }
-
-
-/* header .getLocation:is(:focus, :hover),
-header .toggleMode:is(:focus, :hover) {
-  background: #fff;
-  color: #0a0a0a;
-}
-
-header .sourceCode:is(:focus, :hover) {
-  background: rgba(255, 255, 255, 8%);
-}
-header .sourceCode:is(:focus, :hover) i {
-  color: #fff;
-} */
 
 .currTemp-container {
   margin-top: 2rem;
@@ -133,7 +113,6 @@ header .sourceCode:is(:focus, :hover) i {
   display: flex;
   min-width: 300px;
   justify-content: center;
-  /*   flex-wrap:wrap; */
   gap: 1rem;
 }
 
@@ -188,10 +167,10 @@ header .sourceCode:is(:focus, :hover) i {
   gap: 1rem;
 }
 
-
 .infoBox .text {
   margin-right: 1rem;
 }
+
 .infoBox .icon i {
   font-size: 3rem;
 }
@@ -216,18 +195,16 @@ footer p span {
 }
 
 @media (max-width: 800px) {
-  /* header .sourceCode,
-  header .getLocation {
-    display: none;
-  } */
-
-  .currDate, .currLocation{
+  .currDate,
+  .currLocation {
     padding: 3rem 1rem;
   }
+
   .more-info {
     grid-template-columns: repeat(2, 1fr);
   }
-  .more-info > div{
+
+  .more-info > div {
     padding: 3rem 1rem;
   }
 }
@@ -236,6 +213,7 @@ footer p span {
   .wrapper {
     padding: 1.5rem 1rem 1.5rem;
   }
+
   header {
     flex-wrap: wrap;
   }
@@ -243,19 +221,17 @@ footer p span {
   header > * {
     flex: 1;
   }
-  /* header .toggleMode{
-    display: none;
-  } */
+
   .currTemp-container .left {
     flex-direction: column;
     text-align: center;
   }
+
   .currTemp-container .right {
     flex-direction: column;
   }
+
   .more-info {
     grid-template-columns: none;
   }
-
-  
 }
